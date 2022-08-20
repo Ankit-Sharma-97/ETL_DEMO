@@ -56,7 +56,7 @@ if (BOCResponse.status_code == 200):
     try:
         expenses = petl.io.xlsx.fromxlsx('Expenses.xlsx',sheet='Github')
     except Exception as e:
-        print('could not open expenses.xlsx:' + str(e))
+        print('could not open the expenses.xlsx:' + str(e))
         sys.exit()
 
     # join tables
@@ -85,3 +85,4 @@ if (BOCResponse.status_code == 200):
         print('could not write to database:' + str(e))
     print (expenses)
 
+''' soon will update more too the project'''
